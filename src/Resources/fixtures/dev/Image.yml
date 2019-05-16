@@ -33,3 +33,9 @@ App\Entity\Image:
     tempFileName: 'oil.jpg'
   image17:
     tempFileName: 'sugar.jpg'
+  image18:
+    tempFileName: 'riz-cantonnais.jpeg'
+  image19:
+    tempFileName: 'tartelette-chocolat.jpg'
+  image20:
+    tempFileName: 'cake-orange.jpg'

@@ -26,7 +26,9 @@ class IngredientQuantityType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('quantity', NumberType::class)
+            ->add('quantity', NumberType::class, [
+                'scale'=>2
+            ])
 //            ->add('recipe', EntityType::class, [
 //                'class' => Recipe::class,
 //                'choice_label' => 'name',

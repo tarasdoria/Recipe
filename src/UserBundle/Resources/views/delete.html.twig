@@ -1,0 +1,14 @@
+{% extends "Admin/layout.html.twig" %}
+
+{% block title %} {{ 'app.pagetitle.user.delete'|trans }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <h2>{{ 'app.title.user.delete'|trans }}</h2>
+    <p class="alert alert-danger mt-3">{{ 'app.form.user.delete.disclaimer'|trans }} : {{ resources.username }} ?</p>
+    <form action="{{ path('app_user_delete', {'id': resources.id}) }}" method="post">
+        <a href="{{ path('app_user_index', {'id': resources.id}) }}" class="btn btn-default" id="return__button">
+            {{ 'app.button.delete.return'|trans }}
+        </a>
+        <input type="submit" value="{{ 'app.button.delete.delete'|trans }}" class="btn btn-danger" id="confirmDelete__button" />
+    </form>
+{% endblock %}

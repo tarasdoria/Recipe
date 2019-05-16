@@ -1,0 +1,86 @@
+App\Entity\Recipe:
+  attributes:
+    id:
+      groups: [App, recipe_id]
+    name:
+      groups: [App, recipe_id]
+    author:
+      groups: [App]
+    description:
+      groups: [App]
+    prepTime:
+      groups: [App]
+    cookTime:
+      groups: [App]
+    cal:
+      groups: [App]
+    nbPart:
+      groups: [App]
+    createDate:
+      groups: [App]
+    ingredientsQuantity:
+      groups: [App]
+    image:
+      groups: [App, recipe_id]
+
+App\Entity\IngredientQuantity:
+  attributes:
+    id:
+      groups: [App]
+    quantity:
+      groups: [App]
+    ingredient:
+      groups: [App]
+    recipe:
+      groups: [App]
+    unit:
+      groups: [App]
+
+App\Entity\Ingredient:
+  attributes:
+    id:
+      groups: [App]
+    name:
+      groups: [App]
+    cal:
+      groups: [App]
+    type:
+      groups: [App]
+    products:
+      groups: [App]
+    image:
+      groups: [App]
+
+
+App\Entity\Product:
+  attributes:
+    id:
+      groups: [App]
+    ingredient:
+      groups: [App]
+    description:
+      groups: [App]
+    perempDate:
+      groups: [App]
+    quantity:
+      groups: [App]
+    price:
+      groups: [App]
+    storages:
+      groups: [App]
+
+App\Entity\Storage:
+  attributes:
+    id:
+      groups: [App]
+    name:
+      groups: [App]
+    description:
+      groups: [App]
+
+App\Entity\Image:
+  attributes:
+    id:
+      groups: [App, recipe_id]
+    name:
+      groups: [App, recipe_id]

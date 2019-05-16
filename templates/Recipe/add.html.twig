@@ -1,0 +1,14 @@
+{% extends "Admin/layout.html.twig" %}
+
+{% block title %} {{ 'app.pagetitle.recipe.add'|trans }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <h3 class="mt-5">{{ 'app.title.recipe.add'|trans }}</h3>
+    {{  include("Recipe/_form.html.twig") }}
+    <p class="alert alert-danger mt-3"> {{ 'app.form.recipe.add.disclaimer'|trans }} </p>
+    <p>
+        <a href="{{ path('app_recipe_index') }}" class="btn btn-outline-secondary" id="return__button" >
+            {{ 'app.form.recipe.return'|trans }}
+        </a>
+    </p>
+{% endblock %}

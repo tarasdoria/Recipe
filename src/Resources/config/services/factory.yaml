@@ -1,0 +1,5 @@
+services:
+  App\Factory\RecipeFactory:
+    public: true
+    arguments:
+      - '@security.token_storage'

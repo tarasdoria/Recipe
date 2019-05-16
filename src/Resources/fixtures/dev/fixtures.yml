@@ -1,0 +1,12 @@
+include:
+  - Ingredient.yml
+  - Product.yml
+  - Recipe.yml
+  - Storage.yml
+  - Image.yml
+  - IngredientQuantity.yml
+
+
+
+
+

@@ -1,0 +1,5 @@
+App\UserBundle\Entity\User:
+  user{Paul,Alexandre,Jules}:
+    username:
+    email:
+

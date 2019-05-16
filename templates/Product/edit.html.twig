@@ -1,0 +1,13 @@
+{% extends "Admin/layout.html.twig" %}
+
+{% block title %} {{ 'app.pagetitle.product.edit'|trans }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+    {{  include("Product/_form.html.twig") }}
+    <p class="alert alert-danger mt-3"> {{ 'app.form.product.edit.disclaimer'|trans }} </p>
+    <p>
+        <a href="{{ path('app_product_index') }}" class="btn btn-outline-secondary" id="return__button" >
+            {{ 'app.form.product.return'|trans }}
+        </a>
+    </p>
+{% endblock %}

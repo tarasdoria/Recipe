@@ -1,0 +1,93 @@
+App\Entity\IngredientQuantity:
+  ingredient_quantity1:
+    recipe: '@recipe1'
+    ingredient: '@ingredient16'
+    quantity: '25'
+    unit: 'ml'
+  ingredient_quantity2:
+    recipe: '@recipe1'
+    ingredient: '@ingredient6'
+    quantity: '60'
+    unit: 'g'
+  ingredient_quantity3:
+    recipe: '@recipe1'
+    ingredient: '@ingredient9'
+    quantity: '250'
+    unit: 'g'
+  ingredient_quantity4:
+    recipe: '@recipe1'
+    ingredient: '@ingredient8'
+    quantity: '1'
+    unit: ''
+  ingredient_quantity5:
+    recipe: '@recipe1'
+    ingredient: '@ingredient10'
+    quantity: '50'
+    unit: 'g'
+  ingredient_quantity6:
+    recipe: '@recipe1'
+    ingredient: '@ingredient11'
+    quantity: '2'
+    unit: ''
+  ingredient_quantity7:
+    recipe: '@recipe1'
+    ingredient: '@ingredient3'
+    quantity: '1'
+    unit: ''
+  ingredient_quantity8:
+    recipe: '@recipe1'
+    ingredient: '@ingredient7'
+    quantity: '5'
+    unit: 'g'
+
+  ingredient_quantity9:
+    recipe: '@recipe2'
+    ingredient: '@ingredient1'
+    quantity: '250'
+    unit: 'ml'
+  ingredient_quantity10:
+    recipe: '@recipe2'
+    ingredient: '@ingredient16'
+    quantity: '12'
+    unit: 'ml'
+  ingredient_quantity11:
+    recipe: '@recipe2'
+    ingredient: '@ingredient5'
+    quantity: '40'
+    unit: 'g'
+  ingredient_quantity12:
+    recipe: '@recipe2'
+    ingredient: '@ingredient12'
+    quantity: '25'
+    unit: 'g'
+  ingredient_quantity13:
+    recipe: '@recipe2'
+    ingredient: '@ingredient4'
+    quantity: '20'
+    unit: 'g'
+
+  ingredient_quantity14:
+    recipe: '@recipe3'
+    ingredient: '@ingredient17'
+    quantity: '15'
+    unit: 'g'
+  ingredient_quantity15:
+    recipe: '@recipe3'
+    ingredient: '@ingredient15'
+    quantity: '1'
+    unit: ''
+  ingredient_quantity16:
+    recipe: '@recipe3'
+    ingredient: '@ingredient5'
+    quantity: '50'
+    unit: 'g'
+  ingredient_quantity17:
+    recipe: '@recipe3'
+    ingredient: '@ingredient13'
+    quantity: '2'
+    unit: 'g'
+  ingredient_quantity18:
+    recipe: '@recipe3'
+    ingredient: '@ingredient14'
+    quantity: '35'
+    unit: 'g'

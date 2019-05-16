@@ -1,0 +1,215 @@
+app:
+  navbar:
+    recipe: Recipes
+    ingredient: Ingredients
+    product: Products
+    storage: Storages
+    user: Users
+  connect:
+    connected: Connected as
+    connection: Connect 
+    disconnect: Disconnect
+    register: Register
+  index:
+    pageTitle: Homepage
+    title: My recipe platform
+    description: This site reference not so bad recipes!
+  form:
+    save: Save
+    recipe:
+      return: Return to list
+      add:
+        title: Add a recipe
+        name: Name of the recipe
+        image: Image of the recipe
+        description: Description of the recipe
+        prepTime: Preparation time
+        cookTime: Cooking time
+        cal: Calories per person
+        nbPart: Part number
+        ingredients: The ingredients
+        addIngredient: Add an ingredient
+        ingredient: Ingredient
+        quantity: Quantity
+        disclaimer: |
+                    Warning : this recipe will be added on the site
+                    directly after the form validation.
+      edit:
+        disclaimer: |
+                    Warning : the modifications will takes effect directly
+                    after the form validation.
+      delete:
+        disclaimer: |
+                    Are you sure you wan't to delete this recipe 
+    ingredient:
+      return: Return to list
+      add:
+        name: Name of the ingredient
+        image: Image of the ingredient
+        cal: Calories for 100g
+        type: Ingredient type
+        unit: Ingredient unit
+        disclaimer: |
+                     Warning : this ingredient will be added on the site
+                      directly after the form validation.
+      edit:
+        disclaimer: |
+                    Warning : the modifications will takes effect directly
+                    after the form validation.
+      delete:
+        disclaimer: |
+          Are you sure you wan't to delete this ingredient
+    product:
+      return: Return to list
+      add:
+        title: Add a produit
+        description: Description of the produit
+        perempdate: Peremption date
+        quantity: Quantity
+        price: Price
+        ingredient: Ingredient
+        storages: Storages
+        disclaimer: |
+                    Warning : this product will be added on the site
+                    directly after the form validation.
+      edit:
+        disclaimer: |
+                    Warning : the modifications will takes effect directly
+                    after the form validation.
+      delete:
+        disclaimer: |
+                    Are you sure you wan't to delete this product
+    storage:
+      return: Return to list
+      add:
+        title: Add a storage
+        name: Name of the storage
+        description: Description of the storage
+        disclaimer: |
+                    Warning : this storage will be added on the site
+                    directly after the form validation.
+      edit:
+        disclaimer: |
+                    Warning : the modifications will takes effect directly
+                    after the form validation.
+      delete:
+        disclaimer: |
+                    Are you sure you wan't to delete this storage
+    user:
+      return: Return to list
+      add:
+        title: Add an user
+        username: Name of the user
+        email: E-mail
+        password: Password
+        password_confirmation: Repeat password
+        disclaimer: |
+                     Warning : this user will be added on the site
+                      directly after the form validation.
+      edit:
+        disclaimer: |
+                    Warning : the modifications will takes effect directly
+                    after the form validation.
+      delete:
+        disclaimer: |
+                  Are you sure you wan't to delete this user
+  pagetitle:
+    admin: Admin page
+    recipe:
+      index: The recipes
+      add: Add of a recipe
+      edit: Edit of a recipe
+      delete: Delete of a recipe
+    ingredient:
+      index: The ingredients
+      add: Add of an ingredient
+      edit: Edit of an ingredient
+      delete: Delete of an ingredient
+    product:
+      index: The products
+      add: Add of a product
+      edit: Edit of a product
+      delete: Delete of a product
+    storage:
+      index: The storages
+      add: Add of a strorage
+      edit: Edit of a storage
+      delete: Delete of a storage
+    user:
+      index: The users
+      add: Add of an user
+      edit: Edit of an user
+      delete: Delete of an user
+  title:
+    admin: Admin platform
+    recipe:
+      index: List of recipes
+      add : Add a recipe
+      edit: Edit a recipe
+      delete: Delete a recipe
+    ingredient:
+      index: List of ingredients
+      add: Add a ingredient
+      edit: Edit a ingredient
+      delete: Delete a ingredient
+    product:
+      index: List of products
+      add: Add a product
+      edit: Edit a product
+      delete: Delete a product
+    storage:
+      index: List of storages
+      add: Add a storage
+      edit: Edit a storage
+      delete: Delete a storage
+    user:
+      index: List of users
+      add: Add an user
+      edit: Edit an user
+      delete: Delete an user
+  button:
+    admin:
+      edit: Edit
+      delete: Delete
+      add: Add
+    delete:
+      return: Return to list
+      delete: Delete
+  grid:
+    search: Search
+    reset: Reset filters
+    recipe:
+      name: Name
+      date: Date
+      author: Author
+    ingredient:
+      name: Name
+      cal: Cal/100g
+      type: Type
+    product:
+      description: Description
+      quantity: Quantity
+      price: Price
+    storage:
+      description: Description
+      name: Name
+    user:
+      email: E-mail
+      username: Username
+
+api:
+  list:
+    placeholder: Search a recipe
+    title: Recipes list
+    button: Search
+    error: No result
+  recipe:
+    choose: Choose a recipe
+    time:
+      total: Total time
+      prep: Preparation
+      cook: Cook
+    nbPart: person
+    cal: cal/person
+    ingredients: Ingredients
+    préparation: Preparation

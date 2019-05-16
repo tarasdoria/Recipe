@@ -1,0 +1,51 @@
+{% if form is defined %}
+    {% form_theme form 'Form/app_theme.html.twig' %}
+{% endif %}
+<div class="well">
+    {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+    <div class="form-group">
+        {{ form_label(form.description, 'app.form.product.add.description'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.description, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form_label(form.perempdate,  'app.form.product.add.perempdate'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="form-group">
+            {{ form_widget(form.perempdate.year, {'attr': {'class': 'no-choices'}}) }}
+        </div>
+        <div class="form-group">
+            {{ form_widget(form.perempdate.month, {'attr': {'class': 'no-choices'}}) }}
+        </div>
+        <div class="form-group">
+            {{ form_widget(form.perempdate.day, {'attr': {'class': 'no-choices'}}) }}
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form_label(form.quantity,  'app.form.product.add.quantity'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.quantity, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form_label(form.price,  'app.form.product.add.price'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.price, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form_label(form.ingredient,  'app.form.product.add.ingredient'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.ingredient, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form_label(form.storages,  'app.form.product.add.storages'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.storages, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary btn-lg'}}) }}
+    {{ form_rest(form) }}
+    {{ form_end(form) }}
+</div>

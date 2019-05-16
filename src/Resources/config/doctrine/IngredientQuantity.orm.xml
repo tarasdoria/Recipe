@@ -1,0 +1,19 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                       https://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+    <entity name="App\Entity\IngredientQuantity" table="ingredient_quantity" repository-class="App\Repository\IngredientQuantityRepository">
+        <id name="id" column="id" type="integer">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="quantity" column="quantity" type="float" />
+        <field name="unit" column="unit" type="IngredientUnit" nullable="true"/>
+        <many-to-one field="recipe" target-entity="App\Model\RecipeInterface" inversed-by="ingredientsQuantity">
+            <join-columns>
+                <join-column name="recipe_id" nullable="false" on-delete="CASCADE"/>
+            </join-columns>
+        </many-to-one>
+        <many-to-one field="ingredient" target-entity="App\Model\IngredientInterface" inversed-by="recipesQuantity">
+        </many-to-one>
+    </entity>
+</doctrine-mapping>

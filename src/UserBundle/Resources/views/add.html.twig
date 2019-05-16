@@ -1,0 +1,14 @@
+{% extends "Admin/layout.html.twig" %}
+
+{% block title %} {{ 'app.pagetitle.user.add'|trans }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <h3 class="mt-5">{{ 'app.title.user.add'|trans }}</h3>
+    {{  include("UserBundle::_form.html.twig") }}
+    <p class="alert alert-danger mt-3"> {{ 'app.form.user.add.disclaimer'|trans }} </p>
+    <p>
+        <a href="{{ path('app_user_index') }}" class="btn btn-outline-secondary" id="return__button" >
+            {{ 'app.form.user.return'|trans }}
+        </a>
+    </p>
+{% endblock %}

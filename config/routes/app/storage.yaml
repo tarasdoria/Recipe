@@ -1,0 +1,15 @@
+app_storage_index:
+  path: /
+  controller: App\Controller\StorageController::indexAction
+
+app_storage_add:
+  path: /add
+  controller: App\Controller\StorageController::addAction
+
+app_storage_edit:
+  path: /edit/{id}
+  controller: App\Controller\StorageController::editAction
+
+app_storage_delete:
+  path: /delete/{id}
+  controller: App\Controller\StorageController::deleteAction

@@ -1,0 +1,64 @@
+{% if form is defined %}
+    {% form_theme form 'Form/app_theme.html.twig' %}
+{% endif %}
+<div class="well">
+    {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+
+
+    <div class="form-group">
+        {{ form_label(form.name, 'app.form.recipe.add.name'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.image, 'app.form.recipe.add.image'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        {{ form_widget(form.image) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.description, 'app.form.recipe.add.description'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+
+        <div class="">
+            {{ form_widget(form.description, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.prep_time,  'app.form.recipe.add.prepTime'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.prep_time, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.cook_time, 'app.form.recipe.add.cookTime'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.cook_time, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.cal,  'app.form.recipe.add.cal'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.cal, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.nb_part,  'app.form.recipe.add.nbPart'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.nb_part, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form_row(form.ingredientsQuantity) }}
+        <a href="#" id="add_ingredient" class="btn btn-primary mt-2"> {{ 'app.form.recipe.add.addIngredient'|trans }}</a>
+    </div>
+
+    {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary btn-lg mt-4'}}) }}
+    {{ form_rest(form) }}
+    {{ form_end(form) }}
+</div>

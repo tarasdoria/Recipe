@@ -1,0 +1,13 @@
+{% extends "Admin/layout.html.twig" %}
+
+{% block title %} {{ 'app.pagetitle.admin'|trans }} - {{ parent() }} {% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            {% block grid %}
+
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

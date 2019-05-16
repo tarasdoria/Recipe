@@ -1,0 +1,15 @@
+app_user_index:
+  path: /
+  controller: App\Controller\UserController::indexAction
+
+app_user_add:
+  path: /add
+  controller: App\Controller\UserController::addAction
+
+app_user_edit:
+  path: /edit/{id}
+  controller: App\Controller\UserController::editAction
+
+app_user_delete:
+  path: /delete/{id}
+  controller: App\Controller\UserController::deleteAction

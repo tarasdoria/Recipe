@@ -1,0 +1,8 @@
+services:
+  app.serializer.context.recipe:
+    class: App\Helper\SerializationContextHelper
+    public: true
+    arguments:
+      - '@app.serializer.factory'
+      - '@doctrine.orm.default_entity_manager'
+      - 'App'

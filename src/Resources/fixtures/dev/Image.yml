@@ -1,0 +1,35 @@
+App\Entity\Image:
+  image1:
+    tempFileName: 'water.jpg'
+  image2:
+    tempFileName: 'milk.jpg'
+  image3:
+    tempFileName: 'eggs.jpg'
+  image4:
+    tempFileName: 'chocolate.png'
+  image5:
+    tempFileName: 'flour.jpg'
+  image6:
+    tempFileName: 'rice.png'
+  image7:
+    tempFileName: 'butter.jpg'
+  image8:
+    tempFileName: 'onion.jpg'
+  image9:
+    tempFileName: 'peas.jpg'
+  image10:
+    tempFileName: 'ham.jpg'
+  image11:
+    tempFileName: 'shrimp.jpg'
+  image12:
+    tempFileName: 'cream.jpg'
+  image13:
+    tempFileName: 'yeast.jpg'
+  image14:
+    tempFileName: 'tofu.jpg'
+  image15:
+    tempFileName: 'orange.jpg'
+  image16:
+    tempFileName: 'oil.jpg'
+  image17:
+    tempFileName: 'sugar.jpg'

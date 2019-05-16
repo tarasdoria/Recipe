@@ -1,0 +1,30 @@
+{
+    "devDependencies": {
+        "@symfony/webpack-encore": "^0.27.0",
+        "core-js": "^3.0.0",
+        "vue-loader": "^15.7.0",
+        "vue-template-compiler": "^2.6.10",
+        "webpack-notifier": "^1.6.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server --inline=false",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.4.4",
+        "axios": "^0.18.0",
+        "bazinga-translator": "^2.6.6",
+        "bootstrap": "^4.3.1",
+        "choices.js": "^7.0.0",
+        "ckeditor": "^4.11.4",
+        "jquery": "^3.4.0",
+        "node-sass": "^4.12.0",
+        "sass-loader": "^7.1.0",
+        "vue": "^2.6.10",
+        "vuex": "^3.1.1"
+    }
+}

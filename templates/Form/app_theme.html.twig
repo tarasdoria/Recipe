@@ -1,0 +1,19 @@
+{% block ingredient_quantity_row %}
+<div class="well">
+    <div class="form-group">
+        {{ form_label(form.quantity,  'app.form.recipe.add.quantity'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.quantity, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form_label(form.ingredient,  'app.form.recipe.add.ingredient'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.ingredient, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block date_widget %}
+        {{ form_widget(form) }}
+{% endblock %}

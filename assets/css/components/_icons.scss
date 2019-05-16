@@ -1,0 +1,21 @@
+.icon__left-arrow{
+    opacity: 0.5;
+    width: 44px;
+}
+
+.bounce {
+    animation: bounce 4s infinite ;
+
+}
+
+@keyframes bounce {
+    0%, 10%, 25%, 40%, 100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-20px);
+    }
+    30% {
+        transform: translateX(-10px);
+    }
+}

@@ -1,0 +1,51 @@
+{% extends "Admin/index.html.twig" %}
+
+{% block title %} {{ 'app.pagetitle.storage.index'|trans }} - {{ parent() }} {% endblock %}
+
+{% block body %}
+    {{ parent() }}
+{% endblock %}
+{% block grid %}
+    {% set page = app.request.query.get('page', 1) %}
+    {% set pager = getPagerAdapter(resources, page) %}
+
+    <div class="row mt-4">
+        <div class="col-9">
+            <h2>{{ 'app.title.storage.index'|trans }}</h2>
+        </div>
+        <div class="col-3 text-center">
+        <a href="{{ path('app_storage_add') }}" class="btn-lg btn-primary" id="add__button">
+            {{ 'app.button.admin.add'|trans  }}
+        </a>
+        </div>
+        <div class="col-12 ">
+            {{ include('Storage/_filter.html.twig') }}
+            <a href="{{ path('app_storage_index')}}" class="btn btn-primary float-right" >
+                {{ 'app.grid.reset'|trans  }}
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4"><h3 class="font-weight-bold">{{ 'app.grid.storage.name'|trans }}</h3></div>
+        <div class="col-4"><h3 class="font-weight-bold">{{ 'app.grid.storage.description'|trans }}</h3></div>
+    </div>
+        {% for resource in pager %}
+            <hr>
+            <div class="row mb-4">
+                <div class="col-4">{{ resource.name }}</div>
+                <div class="col-5">{{ resource.description }}</div>
+                <div class="col-3 text-center">
+                    <a href="{{ path('app_storage_edit', {'id': resource.id}) }}" class="btn btn-outline-primary" id="edit__button">
+                        {{ 'app.button.admin.edit'|trans  }}
+                    </a>
+
+                    <a href="{{ path('app_storage_delete', {'id': resource.id}) }}" class="btn btn-danger" id="delete__button">
+                        {{ 'app.button.admin.delete'|trans  }}
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    <div class="pagerfanta">
+        {{ pagerfanta(pager, 'twitter_bootstrap4', { 'omitFirstPage': true}) }}
+    </div>
+{% endblock %}

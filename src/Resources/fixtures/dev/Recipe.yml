@@ -1,0 +1,34 @@
+App\Entity\Recipe:
+  recipe1:
+    name: "Riz cantonnais"
+    author: '<name()>'
+    prep_time:  '<numberBetween(15, 30)>'
+    cook_time:  '<numberBetween(10, 60)>'
+    cal: '<numberBetween(200, 500)>'
+    nb_part: '1'
+    create_date: '<dateTimeBetween("-30days", "now")>'
+    slug: 'riz-cantonnais'
+    image: '@image1'
+
+  recipe2:
+    name: "Tartelette au chocolat"
+    author: '<name()>'
+    prep_time:  '<numberBetween(15, 30)>'
+    cook_time:  '<numberBetween(10, 60)>'
+    cal: '<numberBetween(200, 500)>'
+    nb_part: '1'
+    create_date: '<dateTimeBetween("-30days", "now")>'
+    slug: 'tartelette-au-chocolat'
+    image: '@image2'
+
+  recipe3:
+    name: "Cake à l'orange"
+    author: '<name()>'
+    prep_time:  '<numberBetween(15, 30)>'
+    cook_time:  '<numberBetween(10, 60)>'
+    cal: '<numberBetween(200, 500)>'
+    nb_part: '1'
+    create_date: '<dateTimeBetween("-30days", "now")>'
+    slug: 'cake-a-lorange'
+    image: '@image3'
+

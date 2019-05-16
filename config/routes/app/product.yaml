@@ -1,0 +1,15 @@
+app_product_index:
+  path: /
+  controller: App\Controller\ProductController::indexAction
+
+app_product_add:
+  path: /add
+  controller: App\Controller\ProductController::addAction
+
+app_product_edit:
+  path: /edit/{id}
+  controller: App\Controller\ProductController::editAction
+
+app_product_delete:
+  path: /delete/{id}
+  controller: App\Controller\ProductController::deleteAction

@@ -1,0 +1,53 @@
+{% extends "Admin/index.html.twig" %}
+
+{% block title %} {{ 'app.pagetitle.ingredient.index'|trans }} - {{ parent() }} {% endblock %}
+
+{% block body %}
+
+    {{ parent() }}
+{% endblock %}
+{% block grid %}
+    {% set page = app.request.query.get('page', 1) %}
+    {% set pager = getPagerAdapter(resources, page) %}
+    <div class="row mt-4">
+        <div class="col-9">
+            <h2>{{ 'app.title.ingredient.index'|trans }}</h2>
+        </div>
+        <div class="col-3 text-center">
+            <a href="{{ path('app_ingredient_add') }}" class="btn-lg btn-primary" id="add__button">
+                {{ 'app.button.admin.add'|trans  }}
+            </a>
+        </div>
+        <div class="col-12 ">
+            {{ include('Ingredient/_filter.html.twig') }}
+            <a href="{{ path('app_ingredient_index')}}" class="btn btn-primary float-right" >
+                {{ 'app.grid.reset'|trans  }}
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5"><h3 class="font-weight-bold">{{ 'app.grid.ingredient.name'|trans }}</h3></div>
+        <div class="col-2"><h3 class="font-weight-bold">{{ 'app.grid.ingredient.cal'|trans }}</h3></div>
+        <div class="col-2"><h3 class="font-weight-bold">{{ 'app.grid.ingredient.type'|trans }}</h3></div>
+    </div>
+        {% for resource in pager %}
+            <hr>
+            <div class="row mb-4">
+                <div class="col-5">{{ resource.name }}</div>
+                <div class="col-2">{{ resource.cal }}</div>
+                <div class="col-2">{{ resource.type }}</div>
+                <div class="col-3 text-center">
+                    <a href="{{ path('app_ingredient_edit', {'id': resource.id}) }}" class="btn btn-outline-primary" id="edit__button">
+                        {{ 'app.button.admin.edit'|trans  }}
+                    </a>
+
+                    <a href="{{ path('app_ingredient_delete', {'id': resource.id}) }}" class="btn btn-danger" id="delete__button">
+                        {{ 'app.button.admin.delete'|trans  }}
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    <div class="pagerfanta">
+        {{ pagerfanta(pager, 'twitter_bootstrap4', { 'omitFirstPage': true}) }}
+    </div>
+{% endblock %}

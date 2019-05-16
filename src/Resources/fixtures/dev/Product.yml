@@ -1,0 +1,117 @@
+App\Entity\Product:
+  product1:
+    description: 'Bouteille de lait 1.5L'
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 2)>'
+    ingredient: '@ingredient2'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product2:
+    description: 'Pack de bouteille de lait 6x1.5L'
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(2, 3)>'
+    ingredient: '@ingredient2'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product3:
+    description: "Boîte de 6 œufs "
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 3)>'
+    ingredient: '@ingredient3'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product4:
+    description: "Boîte de 12 œufs "
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(3, 5)>'
+    ingredient: '@ingredient3'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product5:
+    description: "Tablette de chocolat 200g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(2, 5)>'
+    ingredient: '@ingredient4'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product6:
+    description: "Tablette de chocolat 2x200g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(3, 6)>'
+    ingredient: '@ingredient4'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product7:
+    description: "Sac de farine 500g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 2)>'
+    ingredient: '@ingredient5'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product8:
+    description: "Sac de farine 1500g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(2, 3)>'
+    ingredient: '@ingredient5'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product9:
+    description: "Sachet de riz 200g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 5)>'
+    ingredient: '@ingredient6'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product10:
+    description: "Plaquette de beurre 200g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 3)>'
+    ingredient: '@ingredient7'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product11:
+    description: "Plaquette de beurre 500g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(3, 5)>'
+    ingredient: '@ingredient6'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product12:
+    description: "Sachet petit pois congelés 500g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 5)>'
+    ingredient: '@ingredient9'
+  product13:
+    description: "Pot de crème 150g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 3)>'
+    ingredient: '@ingredient12'
+  product14:
+    description: "Sachet de levure 12x10g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 2)>'
+    ingredient: '@ingredient13'
+  product15:
+    description: "Tofu sous vide 200g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 5)>'
+    ingredient: '@ingredient14'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product16:
+    description: "Sachet de sucre en poudre 500g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(1, 2)>'
+    ingredient: '@ingredient17'
+    storages: ['@storage<numberBetween(1, 4)>']
+  product17:
+    description: "Sachet de sucre en poudre 1500g"
+    perempDate: '<dateTimeBetween("now", "+160days")>'
+    quantity: '<numberBetween(50, 150)>'
+    price: '<numberBetween(3, 5)>'
+    ingredient: '@ingredient17'
+    storages: ['@storage<numberBetween(1, 4)>']

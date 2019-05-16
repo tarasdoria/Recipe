@@ -1,0 +1,214 @@
+app:
+  navbar:
+    recipe: Recettes
+    ingredient: Ingredients
+    product: Produits
+    storage: Rangements
+    user: Utilisateurs
+  connect:
+    connected: Connecté en tant que
+    connection: Se connecter
+    disconnect: Déconnexion
+    register: S'inscrire
+  index:
+    pageTitle: Accueil
+    title: Ma plateforme de recette
+    description: Ce site référence des recettes pas dégueu !
+  form:
+    save: Enregistrer
+    recipe:
+      return: Retour à la liste
+      add:
+        title: Ajoutez une recette
+        name: Nom de la recette
+        image: Image de la recette
+        description: Description de la recette
+        prepTime: Temps de préparation
+        cookTime: Temps de cuisson
+        cal: Nombre de calorie par personne
+        nbPart: Nombre de part
+        ingredients: Les ingrédients
+        addIngredient: Ajouter un ingrédient
+        ingredient: Ingrédient
+        quantity: Quantité
+        disclaimer: |
+                    Attention : cette recette sera ajoutée sur le
+                    site directement après validation du formulaire.
+      edit:
+        disclaimer: |
+                    Attention : les modifications apportées prendront effet
+                    directement après validation du formulaire.
+      delete:
+        disclaimer: |
+                     Etes-vous certain de vouloir supprimer la recette
+    ingredient:
+      return: Retour à la liste
+      add:
+        name: Nom de l'ingrédient
+        image: Image de l'ingrédient
+        cal: Nombre de calorie pour 100g
+        type: Type de l'ingrédient
+        unit: Unité de l'ingrédient
+        disclaimer: |
+          Attention : cet ingrédient sera ajoutée sur le
+          site directement après validation du formulaire.
+      edit:
+        disclaimer: |
+          Attention : les modifications apportées prendront effet
+          directement après validation du formulaire.
+      delete:
+        disclaimer: |
+          Etes-vous certain de vouloir supprimer l'ingrédient
+    product:
+      return: Retour à la liste
+      add:
+        title: Ajoutez un produit
+        description: Description du produit
+        perempdate: Date de peremption
+        quantity: Quantité
+        price: Prix
+        ingredient: Ingrédient
+        storages: Rangements
+        disclaimer: |
+                    Attention : ce produit sera ajouté sur le
+                    site directement après validation du formulaire.
+      edit:
+          disclaimer: |
+                      Attention : les modifications apportées prendront effet
+                      directement après validation du formulaire.
+      delete:
+          disclaimer: |
+                      Etes-vous certain de vouloir supprimer le produit
+    storage:
+      return: Retour à la liste
+      add:
+        title: Ajoutez un rangement
+        name: Nom du rangement
+        description: Description du rangement
+        disclaimer: |
+          Attention : ce rangement sera ajouté sur le
+          site directement après validation du formulaire.
+      edit:
+        disclaimer: |
+          Attention : les modifications apportées prendront effet
+          directement après validation du formulaire.
+      delete:
+        disclaimer: |
+          Etes-vous certain de vouloir supprimer le rangement
+    user:
+      return: Retour à la liste
+      add:
+        title: Ajoutez un utilisateur
+        username: Nom d'utilisateur
+        email: E-mail
+        password: Mot de passe
+        password_confirmation: Repetez le mot de passe
+        disclaimer: |
+          Attention : cet utilisateur sera ajouté sur le
+          site directement après validation du formulaire.
+      edit:
+        disclaimer: |
+          Attention : les modifications apportées prendront effet
+          directement après validation du formulaire.
+      delete:
+        disclaimer: |
+          Etes-vous certain de vouloir supprimer l'utilisateur
+  pagetitle:
+    admin: Page admin
+    recipe:
+      index: Les recettes
+      add: Ajout d'une recette
+      edit: Modification d'une recette
+      delete: Suppression d'une recette
+    ingredient:
+      index: Les ingrédients
+      add: Ajout d'un ingrédient
+      edit: Modification d'un ingrédient
+      delete: Suppression d'un ingrédient
+    product:
+      index: Les produits
+      add: Ajout d'un produit
+      edit: Modification d'un produit
+      delete: Suppression d'un produit
+    storage:
+      index: Les rangements
+      add: Ajout d'un rangement
+      edit: Modification d'un rangement
+      delete: Suppression d'un rangement
+    user:
+      index: Les utilisateurs
+      add: Ajout d'un utilisateur
+      edit: Modification d'un utilisateur
+      delete: Suppression d'un utilisateur
+  title:
+    admin: Plateforme Admin
+    recipe:
+      index: Liste des recettes
+      add : Ajoutez une recette
+      edit: Modifiez une recette
+      delete: Supprimez une recette
+    ingredient:
+      index: Liste des ingrédients
+      add: Ajoutez un ingrédient
+      edit: Modifiez un ingrédient
+      delete: Supprimez un ingrédient
+    product:
+      index: Liste des produits
+      add: Ajoutez un produit
+      edit: Modifiez un produit
+      delete: Supprimez un produit
+    storage:
+      index: Liste des rangements
+      add: Ajoutez un rangement
+      edit: Modifiez un rangement
+      delete: Supprimez un rangement
+    user:
+      index: Liste des utilisateurs
+      add: Ajoutez un utilisateur
+      edit: Modifiez un utilisateur
+      delete: Supprimez un utilisateur
+  button:
+    admin:
+      edit: Editer
+      delete: Supprimer
+      add: Ajouter
+    delete:
+      return: Retourner à la liste
+      delete: Supprimer
+  grid:
+    search: Rechercher
+    reset: Réinitialiser les filtres
+    recipe:
+      name: Nom
+      date: Date
+      author: Auteur
+    ingredient:
+      name: Nom
+      cal: Cal/100g
+      type: Type
+    product:
+      description: Description
+      quantity: Quantités
+      price: Prix
+    storage:
+      description: Description
+      name: Nom
+    user:
+      email: E-mail
+      username: Nom d'utilisateur
+api:
+  list:
+    placeholder: Rechercher une recette
+    title: Liste des recettes
+    button: Rechercher
+    error: Pas de résultat
+  recipe:
+    choose: Choisissez une recette
+    time:
+      total: Temps total
+      prep: Préparation
+      cook: Cuisson
+    nbPart: personne
+    cal: cal/personne
+    ingredients: Ingrédients
+    preparation: Préparation

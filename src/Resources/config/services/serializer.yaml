@@ -1,0 +1,6 @@
+services:
+  app.serializer.factory:
+    class:  App\Serializer\SerializerFactory
+    public: true
+    arguments:
+      - '%kernel.root_dir%/../src/Resources/config/serializer/recipe.yaml'

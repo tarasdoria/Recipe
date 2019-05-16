@@ -1,0 +1,20 @@
+<div class="well">
+    {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+    {{ form_errors(form) }}
+
+    <div class="form-group">
+        {{ form_label(form.username, 'app.form.user.add.username'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        {{ form_errors(form.username) }}
+        <div class="">
+            {{ form_widget(form.username, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.email, 'app.form.user.add.email'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    {{ form_end(form) }}
+</div>

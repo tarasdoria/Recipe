@@ -1,0 +1,77 @@
+App\Entity\Recipe:
+  properties:
+    name:
+      - Length:
+          min: 10
+          max: 200
+    description:
+      - NotBlank: ~
+    prepTime:
+      - GreaterThan: 0
+    cookTime:
+      - GreaterThan: 0
+    cal:
+      - GreaterThan: 0
+    nbPart:
+      - GreaterThan: 0
+    ingredientsQuantity:
+      - Valid: ~
+
+
+App\Entity\IngredientQuantity:
+  constraints:
+    - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+        fields: [recipe, ingredient]
+  properties:
+    quantity:
+      - GreaterThan: 0
+    ingredient:
+      - NotBlank: ~
+
+App\Entity\Ingredient:
+  properties:
+    name:
+      - Length:
+          min: 2
+          max: 50
+    cal:
+      - GreaterThan: 0
+    type:
+      - NotBlank: ~
+
+App\Entity\Product:
+  properties:
+    description:
+      - NotBlank: ~
+    perempDate:
+      - NotNull: ~
+    quantity:
+      - GreaterThan: 0
+    price:
+      - GreaterThan: 0
+    ingredient:
+      - NotBlank: ~
+    storages:
+      - NotBlank: ~
+
+App\Entity\Storage:
+  properties:
+    name:
+      - Length:
+          min: 2
+          max: 100
+    description:
+      - NotBlank: ~
+
+App\Entity\User:
+  properties:
+    username:
+      - Length:
+          min: 2
+          max: 100
+    email:
+      - Email: ~
+    plainPassword:
+      - Length:
+          min: 4
+          max: 20

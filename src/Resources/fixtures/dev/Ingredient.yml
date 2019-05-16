@@ -1,0 +1,86 @@
+App\Entity\Ingredient:
+  ingredient1:
+    name: "Eau"
+    cal: '<numberBetween(20, 150)>'
+    type: "B"
+    image: '@image1'
+  ingredient2:
+    name: "Lait"
+    cal: '<numberBetween(20, 150)>'
+    type: "PL"
+    image: '@image2'
+  ingredient3:
+    name: "Oeuf"
+    cal: '<numberBetween(20, 150)>'
+    type: "O"
+    image: '@image3'
+  ingredient4:
+    name: "Chocolat"
+    cal: '<numberBetween(20, 150)>'
+    type: "MG"
+    image: '@image4'
+  ingredient5:
+    name: "Farine"
+    cal: '<numberBetween(20, 150)>'
+    type: "FA"
+    image: '@image5'
+  ingredient6:
+    name: "Riz"
+    cal: '<numberBetween(20, 150)>'
+    type: "C"
+    image: '@image6'
+  ingredient7:
+    name: "Beurre"
+    cal: '<numberBetween(20, 150)>'
+    type: "MG"
+    image: '@image7'
+  ingredient8:
+    name: "Oignon"
+    cal: '<numberBetween(20, 150)>'
+    type: "L"
+    image: '@image8'
+  ingredient9:
+    name: "Petits pois"
+    cal: '<numberBetween(20, 150)>'
+    type: "L"
+    image: '@image9'
+  ingredient10:
+    name: "Jambon"
+    cal: '<numberBetween(20, 150)>'
+    type: "V"
+    image: '@image10'
+  ingredient11:
+    name: "Crevette"
+    cal: '<numberBetween(20, 150)>'
+    type: "P"
+    image: '@image11'
+  ingredient12:
+    name: "Crème"
+    cal: '<numberBetween(20, 150)>'
+    type: "PL"
+    image: '@image12'
+  ingredient13:
+    name: "Levure"
+    cal: '<numberBetween(20, 150)>'
+    type: "FA"
+    image: '@image13'
+  ingredient14:
+    name: "Tofu"
+    cal: '<numberBetween(20, 150)>'
+    type: "L"
+    image: '@image14'
+  ingredient15:
+    name: "Orange"
+    cal: '<numberBetween(20, 150)>'
+    type: "F"
+    image: '@image15'
+  ingredient16:
+    name: "Huile"
+    cal: '<numberBetween(20, 150)>'
+    type: "MG"
+    image: '@image16'
+  ingredient17:
+    name: "Sucre"
+    cal: '<numberBetween(20, 150)>'
+    type: "S"
+    image: '@image17'

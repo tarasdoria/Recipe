@@ -1,0 +1,5 @@
+services:
+  App\DataFixtures\UserFixtures:
+    public: true
+    calls:
+      - [ setContainer, [ '@service_container' ] ]

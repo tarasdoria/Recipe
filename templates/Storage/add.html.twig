@@ -1,0 +1,14 @@
+{% extends "Admin/layout.html.twig" %}
+
+{% block title %} {{ 'app.pagetitle.storage.add'|trans }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <h3 class="mt-5">{{ 'app.title.storage.add'|trans }}</h3>
+    {{  include("Storage/_form.html.twig") }}
+    <p class="alert alert-danger mt-3"> {{ 'app.form.storage.add.disclaimer'|trans }} </p>
+    <p>
+        <a href="{{ path('app_storage_index') }}" class="btn btn-outline-secondary" id="return__button" >
+            {{ 'app.form.storage.return'|trans }}
+        </a>
+    </p>
+{% endblock %}

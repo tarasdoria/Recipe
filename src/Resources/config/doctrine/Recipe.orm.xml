@@ -1,0 +1,32 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                       https://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd"
+                  xmlns:gedmo="http://gediminasm.org/schemas/orm/doctrine-extensions-mapping">
+    <entity name="App\Entity\Recipe" table="recipes" repository-class="App\Repository\RecipeRepository">
+        <id name="id" column="id" type="integer">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="name" column="name" type="string" length="191" unique="false"/>
+        <field name="author" column="author" type="string" length="25"/>
+        <field name="description" column="description" type="text"/>
+        <field name="prepTime" column="prep_time" type="integer"/>
+        <field name="cookTime" column="cook_time" type="integer"/>
+        <field name="cal" column="cal" type="integer" unique="false" nullable="true"/>
+        <field name="nbPart" column="nb_part" type="integer" unique="false" nullable="false"/>
+        <field name="createDate" column="create_date" type="datetime"/>
+        <field name="slug" type="string" length="156" unique="true" nullable="true">
+            <gedmo:slug unique="true" style="default" fields="name,id" separator="-"/>
+        </field>
+        <one-to-many field="ingredientsQuantity" target-entity="App\Model\IngredientQuantityInterface" mapped-by="recipe" orphan-removal="true">
+            <cascade>
+                <cascade-persist/>
+            </cascade>
+        </one-to-many>
+        <one-to-one field="image" target-entity="App\Entity\Image" orphan-removal="true">
+            <cascade>
+                <cascade-all/>
+            </cascade>
+        </one-to-one>
+    </entity>
+</doctrine-mapping>

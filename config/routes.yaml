@@ -1,0 +1,33 @@
+app_shop_api:
+    resource: 'routes/app/shop_api.yaml'
+    prefix: api
+
+app_shop_index:
+    path: /
+    controller: App\Controller\ShopController::indexAction
+
+
+
+app_admin:
+    resource: 'routes/app/admin.yaml'
+    prefix: admin
+
+app_recipe:
+    resource: 'routes/app/recipe.yaml'
+    prefix: admin/recipe
+
+app_ingredient:
+    resource: 'routes/app/ingredient.yaml'
+    prefix: admin/ingredient
+
+app_product:
+    resource: 'routes/app/product.yaml'
+    prefix: admin/product
+
+app_storage:
+    resource: 'routes/app/storage.yaml'
+    prefix: admin/storage
+
+app_user:
+    resource: 'routes/app/user.yaml'
+    prefix: admin/user

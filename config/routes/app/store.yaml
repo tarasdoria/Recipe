@@ -1,0 +1,3 @@
+app_store_index:
+  path: /
+  controller: App\Controller\StoreController::indexAction

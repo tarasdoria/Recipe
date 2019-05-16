@@ -1,0 +1,20 @@
+<div class="well bg-light">
+    {{ form_start(form, {'attr': {'class': 'form-inline justify-content-around my-3 py-3' },'method': 'post'}) }}
+    {{ form_errors(form) }}
+    <div class="form-group">
+        {{ form_widget(form.name, {'attr': {'class': '', 'placeholder': 'app.grid.ingredient.name'|trans }}) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_widget(form.cal, {'attr': {'placeholder': 'app.grid.ingredient.cal'|trans}}) }}
+    </div>
+    <div class="form-group">
+        {{ form_widget(form.type, {'attr': {'placeholder': 'app.grid.ingredient.type'|trans  , 'class': 'no-choices'}}) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_widget(form.search, {'attr': {'class': 'btn btn-primary'}}) }}
+    </div>
+    {{ form_rest(form) }}
+    {{ form_end(form) }}
+</div>

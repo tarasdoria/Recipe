@@ -1,0 +1,21 @@
+framework:
+    secret: '%env(APP_SECRET)%'
+    #default_locale: en
+    #csrf_protection: true
+    #http_method_override: true
+    session:
+        handler_id: ~
+        cookie_secure: auto
+        cookie_samesite: lax
+
+    #esi: true
+    #fragments: true
+    php_errors:
+        log: true
+
+    templating:
+        engines: ['twig', 'php']
+
+    validation: { enabled: true }
+    serializer:
+        enabled: true

@@ -1,0 +1,14 @@
+App\Entity\Storage:
+  storage1:
+    name: 'Carrefour'
+    description: 'Supermarché'
+  storage2:
+    name: 'Auchan'
+    description: 'Supermarché'
+  storage3:
+    name: 'Lidl'
+    description: 'Supermarché'
+  storage4:
+    name: 'Intermarché'
+    description: 'Supermarché'
+

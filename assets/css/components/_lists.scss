@@ -1,0 +1,16 @@
+.recipe__list{
+    max-height: 600px;
+    margin-bottom: 10px;
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.recipe__list>.recipe__list-item:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.list-group-item.active:hover{
+    border-color: #007bff;
+    background-color: #007bff
+}

@@ -1,0 +1,14 @@
+{% extends "Admin/layout.html.twig" %}
+
+{% block title %} {{ 'app.pagetitle.recipe.delete'|trans }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <h2>{{ 'app.title.recipe.delete'|trans }}</h2>
+    <p class="alert alert-danger mt-3">{{ 'app.form.recipe.delete.disclaimer'|trans }} : {{ resources.name }} ?</p>
+    <form action="{{ path('app_recipe_delete', {'slug': resources.slug}) }}" method="post">
+        <a href="{{ path('app_recipe_index', {'slug': resources.slug}) }}" class="btn btn-default" id="return__button">
+            {{ 'app.button.delete.return'|trans }}
+        </a>
+        <input type="submit" value="{{ 'app.button.delete.delete'|trans }}" class="btn btn-danger" id="confirmDelete__button" />
+    </form>
+{% endblock %}

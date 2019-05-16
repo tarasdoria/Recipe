@@ -1,0 +1,44 @@
+parameters:
+    # Adds a fallback DATABASE_URL if the env var is not set.
+    # This allows you to run cache:warmup even if your
+    # environment variables are not available yet.
+    # You should not need to change this value.
+    env(DATABASE_URL): ''
+
+doctrine:
+    dbal:
+        # configure these for your database server
+        driver: 'pdo_mysql'
+        server_version: '5.7'
+        charset: utf8mb4
+        default_table_options:
+            charset: utf8mb4
+            collate: utf8mb4_unicode_ci
+
+        url: '%env(resolve:DATABASE_URL)%'
+        types:
+            IngredientType: App\DBAL\Types\IngredientType
+            IngredientUnit: App\DBAL\Types\IngredientUnit
+    orm:
+        auto_generate_proxy_classes: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+        mappings:
+            App:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/src/Resources/config/doctrine'
+                prefix: 'App\Entity'
+                alias: App
+            UserBundle:
+                is_bundle: true
+                type: xml
+                dir: '/Resources/config/doctrine'
+                prefix: 'App\UserBundle\Entity'
+                alias: User
+        resolve_target_entities:
+            App\Model\IngredientInterface: App\Entity\Ingredient
+            App\Model\IngredientQuantityInterface: App\Entity\IngredientQuantity
+            App\Model\ProductInterface: App\Entity\Product
+            App\Model\RecipeInterface: App\Entity\Recipe
+            App\Model\StorageInterface: App\Entity\Storage

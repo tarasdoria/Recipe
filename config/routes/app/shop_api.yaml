@@ -1,0 +1,7 @@
+app_shop_api_recipes_index:
+  path: /recipes
+  controller: App\Controller\ShopController::getRecipesAction
+
+app_shop_api_get_recipe:
+  path: /recipes/{id}
+  controller: App\Controller\ShopController::getRecipeAction

@@ -1,0 +1,21 @@
+<div class="well">
+    {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+
+    <div class="form-group">
+        {{ form_label(form.name, 'app.form.storage.add.name'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.description, 'app.form.storage.add.description'|trans , {'label_attr': {'class': 'col-sm-4 control-label'}}) }}
+        <div class="">
+            {{ form_widget(form.description, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary btn-lg'}}) }}
+    {{ form_rest(form) }}
+    {{ form_end(form) }}
+</div>

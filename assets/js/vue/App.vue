@@ -1,16 +1,19 @@
 <template>
-  <div class="container min-vh-100">
+  <div class="min-vh-100">
     <app-header></app-header>
-
-    <div class="row">
-      <app-list></app-list>
-      <app-recipe></app-recipe>
+    <div class="container">
+      <div class="row row__body">
+        <app-list></app-list>
+        <app-recipe></app-recipe>
+      </div>
     </div>
+      <app-footer></app-footer>
   </div>
 </template>
 
 <script>
   import Header from './components/header/header'
+  import Footer from './components/footer/footer'
   import List from './components/list/recipes'
   import Recipe from './components/recipe/recipe'
   import {mapActions} from 'vuex'
@@ -18,6 +21,7 @@
   export default {
     components: {
       appHeader: Header,
+      appFooter: Footer,
       appList: List,
       appRecipe: Recipe,
     },

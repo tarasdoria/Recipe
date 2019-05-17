@@ -6,9 +6,12 @@
 
 @import 'components/lists';
 @import 'components/icons';
+@import 'components/recipes';
 
-@import 'layout/footer';
 @import 'layout/header';
+@import 'layout/body';
+@import 'layout/footer';
+@import 'layout/navbar';
 @import 'layout/forms';
 
 @import 'background';

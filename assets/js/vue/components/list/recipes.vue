@@ -1,6 +1,6 @@
 <template>
-    <div class="col-4">
-        <h2>{{ trans.title }}</h2>
+    <div class="col-4 recipe__list-container">
+        <h2 class="recipe__list-title">{{ trans.title }}</h2>
         <form class="form-inline mb-4">
             <div class="form-group w-100">
                 <input class="w-100" type="text" :placeholder="trans.placeholder" v-model="searchFilter">

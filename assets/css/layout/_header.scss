@@ -1,6 +1,48 @@
-header{
+.header__container{
+    position: relative;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #4690b9;
 }
 
-.image_logo{
-    max-width: 5rem;
+.header__navbar{
+    position: relative;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.header__greetings{
+    margin: 0 auto;
+    color: $white;
+    position: relative;
+    z-index: 1;
+    padding: 10rem 5rem;
+}
+
+.header__greetings h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.header__greetings p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.header__background{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    opacity: .12;
+    background-color: #4282aa;
+    background-image: url('../../../public/images/header.jpg');
 }

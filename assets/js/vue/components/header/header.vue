@@ -23,6 +23,9 @@
 <!--                            <a class="dropdown-item" @click="loadDay">Load day</a>-->
 <!--                        </div>-->
 <!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" @click="randomizePrice">End day</a>-->
+<!--                    </li>-->
 <!--                </ul>-->
 <!--            </div>-->
         </nav>

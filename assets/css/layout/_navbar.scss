@@ -1,10 +1,33 @@
-.navbar{
-    height: 10vh;
-    background-color: $white;
-    padding: 2rem 0rem;
+.header__navbar{
+    padding: 2rem 0;
 }
 
-.navbar-brand{
-    font-size: 2.5rem;
-    color: $white;
+.header__nav-item>a{
+    position: relative;
+    font-size: 1.2rem;
 }
+
+.header__nav-item a:after,
+.header__nav-item a:before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 0%;
+    height: 3px;
+    margin: 5px 0 0;
+    transition: all 0.3s ease;
+    opacity: 0;
+    background-color: $green; }
+
+.header__nav-item a:after {
+    right: calc(50%);
+    border-radius: 5px 0px 0px 5px; }
+
+.header__nav-item a:before {
+    left: calc(50%);
+    border-radius: 0px 5px 5px 0px; }
+
+.header__nav-item:hover > a:after,
+.header__nav-item:hover > a:before {
+    width: 50%;
+    opacity: 1; }

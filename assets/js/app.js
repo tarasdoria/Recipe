@@ -1,4 +1,3 @@
-import '../css/app.scss';
 import {init as initCollection} from './collectionForm'
 import Choices from "choices.js"
 import * as types from "./vue/store/types";

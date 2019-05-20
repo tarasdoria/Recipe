@@ -36,9 +36,6 @@
                 return imgLocation()
             }
         },
-        updated() {
-            console.log('updated');
-        }
     }
 </script>
 

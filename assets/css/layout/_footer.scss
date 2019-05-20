@@ -1,4 +1,40 @@
 footer{
-    background-color: $white;
-    padding: 2rem 10rem;
+    background-color: $jumbotron-color;
+    padding: .5rem 0;
 }
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__socials{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__socials-icon{
+    margin: 1rem;
+    width: 2.5rem;
+    transition: all .2s ease-out;
+}
+
+.footer__socials-icon:hover{
+    cursor: pointer;
+}
+
+.footer__rights{
+    display: flex;
+    padding: 2rem;
+
+}
+
+.footer__rights>p{
+    margin: auto 0;
+}
+
+.footer__logo{
+    width: 10rem;
+}
+

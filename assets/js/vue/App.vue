@@ -1,12 +1,18 @@
 <template>
   <div class="min-vh-100">
+      <a href="" id="return-to-top">
+          <span class="chevron-top"></span>
+      </a>
     <app-header></app-header>
-    <div class="container">
-      <div class="row row__body">
-        <app-list></app-list>
-        <app-recipe></app-recipe>
+      <div class="body">
+          <div class="body__background"></div>
+          <div class="container">
+              <div class="row row__body">
+                  <app-list></app-list>
+                  <app-recipe></app-recipe>
+              </div>
+          </div>
       </div>
-    </div>
       <app-footer></app-footer>
   </div>
 </template>
